@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Materialize/css/materialize.min.css">
+    <script src="min3.js"></script>
+    <script src="Materialize/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/FontAwesome.otf">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="red" style="padding: 0px 10px;">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Web Zone</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="#"><i class="fa fa-home fa-2x">Home</i></a>
+                </li>
+                <li>
+                    <a href="#">Video</a>
+                </li>
+                <li>
+                    <a href="#">Service</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact<i class="fa fa-phone fa-2x"></i></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-nav">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Video</a>
+            </li>
+            <li>
+                <a href="#">Service</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+
+        <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+        </script>
+</body>
+
+</html>

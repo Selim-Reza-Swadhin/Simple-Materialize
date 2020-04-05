@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="min3.js"></script>
+    <link rel="stylesheet" href="css/materialize.css">
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <title>Document</title>
+    <style>
+    .indicator-item{
+        padding: 15px;
+        color:blue;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-action green white-text">
+                <h3>Materialize-css carousel with Next Pre Buttons</h3>
+            </div>
+        </div>
+
+        <!-- carousel -->
+        <div class="carousel carousel-slider" indicators="true">
+            <a href="#" class="carousel-item">
+                <img src="dnld/a.jpg" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="dnld/b.jpg" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="dnld/c.jpg" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="dnld/d.jpg" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="dnld/e.jpg" alt="">
+            </a>
+        </div>
+
+
+        <br>
+
+        <div class="btn green waves-effect prev">Prev</div>
+        <div class="btn green waves-effect next">Next</div>
+    </div>
+
+    <!-- add jquery script -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.carousel').carousel({
+                fullWidth:true,
+                indicators:true
+            }).height(500);
+
+            // function for prev slide
+            $('.prev').click(function () {
+                $('.carousel').carousel('prev');
+            });
+
+            // function for next slide
+            $('.next').click(function () {
+                $('.carousel').carousel('next');
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

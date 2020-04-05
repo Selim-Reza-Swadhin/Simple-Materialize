@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="min3.js"></script>
+    <link rel="stylesheet" href="css\materialize.min.css">
+    <script src="js\materialize.min.js"></script>
+    <title>Document</title>
+    <style>
+        .indicator-item{
+            padding: 10px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                fullWidth:true,
+                indicators:true
+            }).height(700);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="carousel carousel-slider">
+        <a href="#1" class="carousel-item">
+            <img src="pic/10.jpg" alt="">
+        </a>
+        <a href="#1" class="carousel-item">
+            <img src="pic/11.jpg" alt="">
+        </a>
+        <a href="#1" class="carousel-item">
+            <img src="pic/12.jpg" alt="">
+        </a>
+        <a href="#1" class="carousel-item">
+            <img src="pic/13.jpg" alt="">
+        </a>
+        <a href="#1" class="carousel-item">
+            <img src="pic/14.jpg" alt="">
+        </a>
+    </div>
+</body>
+
+</html>
